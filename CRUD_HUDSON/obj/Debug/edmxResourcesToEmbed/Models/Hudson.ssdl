@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="hudsonModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Pedidos">
+    <Key>
+      <PropertyRef Name="Id_Pedido" />
+    </Key>
+    <Property Name="Id_Pedido" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cantidad" Type="float" />
+    <Property Name="Nombre_Cliente" Type="varchar" MaxLength="150" />
+    <Property Name="Fecha_Pedido" Type="date" />
+    <Property Name="CP_Entrega" Type="int" />
+  </EntityType>
+  <EntityContainer Name="hudsonModelStoreContainer">
+    <EntitySet Name="Pedidos" EntityType="Self.Pedidos" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

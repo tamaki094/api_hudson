@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="hudsonModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Pedidos">
+    <Key>
+      <PropertyRef Name="Id_Pedido" />
+    </Key>
+    <Property Name="Id_Pedido" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cantidad" Type="Double" />
+    <Property Name="Nombre_Cliente" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Pedido" Type="DateTime" Precision="0" />
+    <Property Name="CP_Entrega" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="hudsonEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Pedidos" EntityType="Self.Pedidos" />
+  </EntityContainer>
+</Schema>

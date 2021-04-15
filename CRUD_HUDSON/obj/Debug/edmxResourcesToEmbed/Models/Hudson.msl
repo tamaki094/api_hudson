@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="hudsonModelStoreContainer" CdmEntityContainer="hudsonEntities">
+    <EntitySetMapping Name="Pedidos">
+      <EntityTypeMapping TypeName="hudsonModel.Pedidos">
+        <MappingFragment StoreEntitySet="Pedidos">
+          <ScalarProperty Name="Id_Pedido" ColumnName="Id_Pedido" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Nombre_Cliente" ColumnName="Nombre_Cliente" />
+          <ScalarProperty Name="Fecha_Pedido" ColumnName="Fecha_Pedido" />
+          <ScalarProperty Name="CP_Entrega" ColumnName="CP_Entrega" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
